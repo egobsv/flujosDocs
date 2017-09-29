@@ -13,15 +13,16 @@ https://download.alfresco.com/release/community/201605-build-00010/alfresco-comm
 
 Antes de instalar Alfresco, cree la carpeta de destino de la instalación y luego ejecute el instalador:
 
-``` mkdir /opt/alfresco 
-    ./alfresco-community-installer-201605-linux-x64.bin
+```
+ mkdir /opt/alfresco 
+  ./alfresco-community-installer-201605-linux-x64.bin
 ```
 
-Seleccione la carpeta '/opt/alfresco' al instalar la aplicación. 
+Seleccione la carpeta '/opt/alfresco' al instalar la aplicación. Puede ingresar a la aplicación desde http://[DIRECCION IP]:8080/share con el usuario 'admin' y la contraseña que eligió durante la instalación.
 
 ## Flujos de Trabajo 
 
-Alfresco trae instalado los siguientes Flujos de trabajo (dentro del menu Tareas) que pueden ser usados para automatizar el flujo de tareas administrativas:
+Alfresco tiene ya instalados varios flujos de trabajo (dentro del menú Tareas) que pueden ser usados para automatizar tareas administrativas y la revision de documentos:
 
 * Nueva tarea - Asignar una tarea nueva a usted o a un colega
 * Revisar y aprobar (revisión de grupo) - Asignar una tarea de revisión a un grupo de personas
@@ -29,11 +30,12 @@ Alfresco trae instalado los siguientes Flujos de trabajo (dentro del menu Tareas
 * Revisar y aprobar (revisión agrupada) - Asignar una tarea de revisión a varias personas, que pueden hacerse cargo de la tarea
 * Revisar y aprobar (solo un revisor) - Asignar una tarea de revisión a un único revisor
  
+Es posible diseñar y agregar flujos personalizados diseñados usando BPMN 2.0, las instrucciones están [disponibles en esta página](http://docs.alfresco.com/community/topics/wf-howto.html).
+ 
 
+## Firma Electrónica de Documentos
  
-## Firma Electronica de Documentos
- 
-Es posible dentro del flujo de trabajo sea necesario firmar documentos. Para incorporar la función de firma electronica la sistema es necesario instalar el [módulo de firma digital](https://github.com/rouxemmanuel/DigitalSigning/wiki). Este módulo permite firmar archivos PDF. Es posible firmar archivos DOC pero estos son convertidos automáticamente a formato PDF. Para usar este módulo cada usuario del sistema debe contar con su certificado de firma electrónica en formato p12. Para instalarlo siga los siguientes pasos:
+Es posible que dentro del flujo de trabajo sea necesario firmar documentos. Para incorporar la función de firma electrónica al sistema es necesario instalar el [módulo de firma digital](https://github.com/rouxemmanuel/DigitalSigning/wiki). Este módulo permite firmar archivos PDF, es posible firmar archivos DOC pero estos son convertidos automáticamente a formato PDF. Para usar este módulo cada usuario del sistema debe contar con un certificado de firma electrónica en formato p12. Para instalarlo siga los siguientes pasos:
 
 ```
 cp digitalSigningAlfresco.amp /opt/alfresco/amps/
@@ -50,7 +52,7 @@ cd /opt/alfresco
 ./afresco.sh start
 ```
 
-Una vez instalado, ingrese al sistema configure el panel de inicio, seleccione la opción 'añadir dashlets' y arrastre 'Signature' a un panel de la página de inicio y presione aceptar.  De regreso en la página de inicio, ubíquese sobre el panel de Firma Digital y presione el icono del lápiz para abrir del dialogo de configuración de su firma. Es posible ademas incluir en afirma una imagen de su firma manual si lo desea.
+Una vez instalado el módulo, ingrese al sistema y configure el panel de inicio. Seleccione la opción 'añadir dashlets' y arrastre 'Signature' a un panel de la página de inicio, luego presione aceptar.  De regreso en la página de inicio, ubíquese sobre el panel de Firma Digital y presione el icono del lápiz para abrir del diálogo de configuración de su firma. Es posible ademas incluir una imagen de su firma manual si lo desea.
 
 
 ## Licencia
