@@ -4,7 +4,8 @@
 La Ley de Firma Electronica de El Salvador instruye a las instituciones públicas a implementar sistemas de gestión de documentos que utilicen firma electrónica para eliminar las copias físicas:
 
 Art. 29.- Las autoridades, funcionarios y empleados del Estado que presten servicios públicos dentro de su ámbito de competencia podrán suscribirlos por medio de firma electrónica simple.
-
+
+
 Esta guía muestra como instalar el gestor documental libre Alfresco para implementar flujos de trabajo y firmar documentos electronicamente. Esta guía utiliza Alfresco 5.1 y Ubuntu 16.04 LTS y debería funcionar en otros sistemas Linux. 
 
 ## Instalación
@@ -42,11 +43,11 @@ cp digitalSigningAlfresco.amp /opt/alfresco/amps/
 cp digitalSigningShare.amp /opt/alfresco/amps_share/
 
 cd /opt/alfresco/
-./afresco.sh stop
+./alfresco.sh stop
 rm -rf tomcat/webapps/alfresco tomcat/webapps/share
 
 cd /opt/alfresco/bin
-./apply_amps 
+./apply_amps.sh 
 
 cd /opt/alfresco
 ./afresco.sh start
