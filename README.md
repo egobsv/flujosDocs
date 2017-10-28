@@ -57,7 +57,7 @@ Una vez instalado el módulo, ingrese al sistema y configure el panel de inicio.
 
 ## Gestión de Registros 
 
-La ley de Acceso a la Información Pública (Art. 3, letras e, f y g. Art. 42 letra b) define los lineamientos para que las instituciones implementen sistemas de gestión documentos electrónicos.  Ademas de ofrecer la gestion de flujos, Alfresco ofrece un [módulo de gestión documental](http://docs.alfresco.com/rm/concepts/rm-record-lifecycle.html), que puede ser descargado desde [este enlace](https://community.alfresco.com/external-link.jspa?url=https%3A%2F%2Fdownload.alfresco.com%2Frelease%2Fcommunity%2F201605-build-00010%2Falfresco-rm-community-2.4.b.zip). Para instalarlo siga los siguientes pasos:
+La Ley de Acceso a la Información Pública (Art. 3, letras e, f y g. Art. 42 letra b) define los lineamientos para que las instituciones implementen sistemas de gestión de documentos electrónicos. Alfresco ofrece un [módulo de gestión documental](http://docs.alfresco.com/rm/concepts/rm-record-lifecycle.html), que puede ser descargado desde [este enlace](https://community.alfresco.com/external-link.jspa?url=https%3A%2F%2Fdownload.alfresco.com%2Frelease%2Fcommunity%2F201605-build-00010%2Falfresco-rm-community-2.4.b.zip). Para instalarlo siga los siguientes pasos:
 
 ```
 cp alfresco-rm-community-repo-2.4.b.amp /opt/alfresco/amps/
