@@ -55,6 +55,24 @@ cd /opt/alfresco
 
 Una vez instalado el módulo, ingrese al sistema y configure el panel de inicio. Seleccione la opción 'añadir dashlets' y arrastre 'Signature' a un panel de la página de inicio, luego presione aceptar.  De regreso en la página de inicio, ubíquese sobre el panel de Firma Digital y presione el icono del lápiz para abrir del diálogo de configuración de su firma. Es posible ademas incluir una imagen de su firma manual si lo desea.
 
+## Gestión de Registros 
+
+La ley de Acceso a la Información Pública (Art. 3, letras e, f y g. Art. 42 letra b) define los lineamientos para que las instituciones implementen sistemas de gestión documentos electrónicos.  Ademas de ofrecer la gestion de flujos, Alfresco ofrece un [módulo de gestión documental](http://docs.alfresco.com/rm/concepts/rm-record-lifecycle.html), que puede ser descargado desde [este enlace](https://community.alfresco.com/external-link.jspa?url=https%3A%2F%2Fdownload.alfresco.com%2Frelease%2Fcommunity%2F201605-build-00010%2Falfresco-rm-community-2.4.b.zip). Para instalarlo siga los siguientes pasos:
+
+```
+cp alfresco-rm-community-repo-2.4.b.amp /opt/alfresco/amps/
+cp alfresco-rm-community-share-2.4.b.amp /opt/alfresco/amps_share/
+
+cd /opt/alfresco/
+./afresco.sh stop
+rm -rf tomcat/webapps/alfresco tomcat/webapps/share
+
+cd /opt/alfresco/bin
+./apply_amps 
+
+cd /opt/alfresco
+./afresco.sh start
+```
 
 ## Licencia
 
