@@ -6,7 +6,7 @@ La Ley de Firma Electronica de El Salvador instruye a las instituciones pública
 Art. 29.- Las autoridades, funcionarios y empleados del Estado que presten servicios públicos dentro de su ámbito de competencia podrán suscribirlos por medio de firma electrónica simple.
 
 
-Esta guía muestra como instalar el gestor documental libre Alfresco para implementar flujos de trabajo y firmar documentos electronicamente. Esta guía utiliza Alfresco 5.2 y Debian 9 y debería funcionar en otros sistemas Linux. 
+Esta guía muestra como instalar el gestor documental libre Alfresco para implementar flujos de trabajo y firmar documentos electronicamente. Esta guía utiliza Alfresco 5.2 para Linux, puede usar la distibucion que prefiera. 
 
 ## Instalación
 [Descargue la versión 5.2 aquí](
