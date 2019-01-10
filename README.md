@@ -9,14 +9,14 @@ Art. 29.- Las autoridades, funcionarios y empleados del Estado que presten servi
 Esta guía muestra como instalar el gestor documental libre Alfresco para implementar flujos de trabajo y firmar documentos electronicamente. Esta guía utiliza Alfresco 5.1 y Ubuntu 16.04 LTS y debería funcionar en otros sistemas Linux. 
 
 ## Instalación
-El módulo requerido para firmar PDF no esta disponible para Alfresco 5.2,  [descargue la versión 5.1 aquí](
-https://download.alfresco.com/release/community/201605-build-00010/alfresco-community-installer-201605-linux-x64.bin), el proceso de instalación esta [descrito en esta página.](http://docs.alfresco.com/5.1/tasks/simpleinstall-enterprise-lin.html). 
+El módulo requerido para firmar PDF no esta disponible para Alfresco 5.2,  [descargue la versión 5.2 aquí](
+https://download.alfresco.com/release/community/201707-build-00028/alfresco-community-installer-201707-linux-x64.bin), el proceso de instalación esta [descrito en esta página.](http://docs.alfresco.com/community5.1/tasks/simpleinstall-community-lin-text.html). 
 
 Antes de instalar Alfresco, cree la carpeta de destino de la instalación y luego ejecute el instalador:
 
 ```
  mkdir /opt/alfresco 
-  ./alfresco-community-installer-201605-linux-x64.bin
+  ./alfresco-community-installer-201707-linux-x64.bin
 ```
 
 Seleccione la carpeta '/opt/alfresco' al instalar la aplicación. Puede ingresar a la aplicación desde http://[DIRECCION IP]:8080/share con el usuario 'admin' y la contraseña que eligió durante la instalación.
